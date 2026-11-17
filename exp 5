@@ -1,0 +1,40 @@
+#include <iostream>
+using namespace std;
+
+class Person {
+public:
+    string name;
+    void showPerson() {
+        cout << "Name: " << name << endl;
+    }
+};
+
+class Student : public Person {
+public:
+    int roll;
+    void showStudent() {
+        cout << "Roll: " << roll << endl;
+    }
+};
+
+class GraduateStudent : public Student {
+public:
+    string course;
+    void showCourse() {
+        cout << "Course: " << course << endl;
+    }
+};
+
+int main() {
+    GraduateStudent s;
+
+    s.name = "Amit";
+    s.roll = 101;
+    s.course = "MTech";
+
+    s.showPerson();
+    s.showStudent();
+    s.showCourse();
+
+    return 0;
+}

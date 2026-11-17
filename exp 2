@@ -1,0 +1,43 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+#include <string>
+using namespace std;
+
+class vehicle{
+    public:
+    string brand;
+    string number;
+    string color;
+    vehicle(string b,string n,string c){
+        brand =b;
+        number=n;
+        color=c;
+    }
+};
+class car:public vehicle{
+    public:
+    int passengers;
+    int year;
+
+    car(string b,string n, string c,int p,int y)
+    :vehicle(b,n,c){
+        passengers=p;
+        year=y;
+    }
+    void display(){
+        cout<<"brand:"<<brand<<endl;
+        cout<<"car number:"<<number<<endl;
+        cout<<"color:"<<color<<endl;
+        cout<<"passengers:"<<passengers<<endl;
+        cout<<"year:"<<year<<endl;
+    }
+};
+
+
+int main() {
+    car c1("toyota","BR097123","black",4,2000);
+    c1.display();
+
+    return 0;
+    
+}

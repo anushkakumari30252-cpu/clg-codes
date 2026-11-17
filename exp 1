@@ -1,0 +1,29 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+int main() {
+    int age=18;
+    float height=5.9;
+    double salary=25000.00;
+    char grade= 'A';
+    bool isStudent= true;
+    string name= "anushka";
+    const float PI = 3.14159;
+    cout<<"enter ur age:";
+    cin>>age;
+    cout<<"enter ur name:";
+    cin>>name;
+    cout<<"\n---student details---"<<endl;
+    cout<<"name:"<<name<<endl;
+    cout<<"age:"<<age<<endl;
+    cout<<"height:"<<height<<"ft"<<endl;
+    cout<<"grade:"<<grade<<endl;
+    cout<<"student:"<<isStudent<<endl;
+    cout<<"PI:"<<PI<<endl;
+    return 0;
+    // Write C++ code here
+    std::cout << "Start small. Ship something.";
+
+    return 0;
+}

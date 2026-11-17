@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+class Number {
+public:
+    int x;
+
+    Number(int a) {
+        x = a;
+    }
+
+    void show(int a) {
+        cout << "Integer: " << a << endl;
+    }
+
+    void show(double a) {
+        cout << "Double: " << a << endl;
+    }
+
+    Number operator+(Number n) {
+        return Number(x + n.x);
+    }
+};
+
+int main() {
+    Number a(10), b(20);
+
+    a.show(5);
+    a.show(2.5);
+
+    Number c = a + b;
+    cout << "Sum: " << c.x << endl;
+
+    return 0;
+}
